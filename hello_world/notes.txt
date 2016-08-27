@@ -10,9 +10,11 @@ sudo ntpdate pool.ntp.gov
 sudo service ntp start
 date
 
-# CLONE GITHUB EXAMPLE CODE
+# CLONE GITHUB REPOSITORY
 sudo apt-get install git cmake gedit
 git clone https://github.com/cmcmurrough/cse2100
+
+# BUILD HELLO WORLD EXAMPLE
 cd hello_world
 cmake .
 make
