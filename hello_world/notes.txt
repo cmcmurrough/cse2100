@@ -1,0 +1,19 @@
+# SET LOCALE AND TIME ZONE
+raspi-config
+
+# UPDATE SYSTEM TIME WITH NTP
+date
+sudo apt-get update
+sudo apt-get install ntpdate
+sudo service ntp stop
+sudo ntpdate pool.ntp.gov
+sudo service ntp start
+date
+
+# CLONE GITHUB EXAMPLE CODE
+sudo apt-get install git cmake gedit
+git clone https://github.com/cmcmurrough/cse2100
+cd hello_world
+cmake .
+make
+./hello_world
