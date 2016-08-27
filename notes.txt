@@ -1,0 +1,9 @@
+date
+sudo apt-get update
+sudo apt-get install ntpdate
+sudo service ntp stop
+sudo ntpdate pool.ntp.gov
+sudo service ntp start
+date
+
+sudo apt-get install git cmake gedit
