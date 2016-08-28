@@ -1,6 +1,6 @@
 # INSTALL KILE TEX EDITOR AND OCULAR PDF READER
 sudo apt-get udpate
-sudo apt-get install kile okular
+sudo apt-get install kile okular texlive-latex-base texlive-fonts-extra
 
 # CLONE GIT REPOSITORY
 git clone https://github.com/cmcmurrough/cse2100
