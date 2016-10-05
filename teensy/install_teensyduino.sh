@@ -7,4 +7,5 @@ cp 49-teensy.rules /etc/udev/rules.d/
 
 # download and run the installer
 wget https://www.pjrc.com/teensy/td_130/TeensyduinoInstall.linuxarm
+chmod +x TeensyduinoInstall.linuxarm
 ./TeensyduinoInstall.linuxarm
