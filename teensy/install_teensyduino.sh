@@ -1,6 +1,6 @@
 # install the Arduino IDE
-#wget https://www.arduino.cc/download_handler.php?f=/arduino-1.6.12-linuxarm.tar.xz
-#tar xf arduino-1.6.12-linuxarm.tar.xz
+#wget https://www.arduino.cc/download_handler.php?f=/arduino-1.6.11-linuxarm.tar.xz
+#tar xf arduino-1.6.11-linuxarm.tar.xz
 #sh install.sh
 
 # download and install the udev rules
