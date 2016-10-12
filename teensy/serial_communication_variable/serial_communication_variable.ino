@@ -221,11 +221,11 @@ void loop()
                 // validate the packet
                 if(validatePacket(packetSize, buffer))
                 {
-                    // change the LED state
+                    // change the LED state if the packet is valid
                     ledState = !ledState;
                     digitalWrite(LED_PIN, ledState);
-
-                    // echo back the packet payload
+                    
+                    // echo back the received packet payload
                     sendPacket(packetSize - PACKET_OVERHEAD_BYTES, buffer + 2);
                 }
 
