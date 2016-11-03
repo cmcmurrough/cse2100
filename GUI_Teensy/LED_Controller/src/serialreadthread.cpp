@@ -55,10 +55,14 @@ gpointer Serial_Read_Thread()
 	      //the next three lines need to be there for the value to be
 	      //displayed (once you loaded voltage_value with the received
 	      //voltage value
-	      
-	      g_mutex_lock(mutex_to_protect_voltage_display);
-	      sprintf(c_voltage_value,"%1.3f",voltage_disp);
-	      g_mutex_unlock(mutex_to_protect_voltage_display);
+
+	      //once you have voltage_disp calculated us the following three
+	      //lines of code to change the global variable c_voltage_value
+	      //this is the variable that the main thread periodically displays
+	      //in the GUI
+	      //g_mutex_lock(mutex_to_protect_voltage_display);
+	      //sprintf(c_voltage_value,"%1.3f",voltage_disp);
+	      //g_mutex_unlock(mutex_to_protect_voltage_display);
 	
 	    }
 	}
